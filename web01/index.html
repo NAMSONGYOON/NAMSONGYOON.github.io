@@ -12,7 +12,6 @@
    <meta property="og:site_name" content="LUSH KOREA">
    <meta property="og:title" content="LUSH KOREA">
    <meta property="og:url" content="https://www.lush.co.kr/">
-   <meta property="og:url" content="/">
    <meta property="og:type" content="website">
    <meta property="og:description" content="세상을 비트는 욕심쟁이 스무살, 남들과는 다르게 옳다고 생각하는것을 믿고 세상을 비틀어온 러쉬 코리아의 20주년 쇼케이스.">
    <meta property="og:image" content="./img/logo/logo.png"> 
@@ -32,12 +31,31 @@
    <script src="./js/respond.min.js"></script>
    <!-- jquery 플러그인 연결 -->
    <script src="./js/jquery-1.11.1.js"></script>
+   <link rel="stylesheet" href="./css/reset.css">
+   <style>
+    /* header.css */
+    .hd { width: 100%; position: fixed; top: 0; left: 0; z-index:999; background-color: #fff; height: 72.39px; }
+    .hd:hover { background-color: #fff; }
+    .logo { display:block; width: 160px; height:auto; margin-top:40px; margin-bottom:40px; float:left;}
+    .logo img { display: block; width: 100%; }
+    ..tnb { float:right; margin-top: 40px; margin-bottom: 40px; }
+    .tnb a { font-size:14px; color:#333; padding: 14px; font-weight:300; }
+    .tnb a:hover { font-weight:700; text-decoration: underline; }
+    .gnb { clear:both; }
+    .gnb li { float:left; }
+    .gnb li .sub { display:none; }
+    .gnb > ul > li { width: 20%; text-align: center; }
+    .gnb li .dp1 { display:block; height:40px; line-height: 40px; 
+    background-color: transparent; color:#fff; }
+    .gnb li:hover .dp1 { background-color: #fff; }
+
+   </style>
 </head>
 <body>
 <div class="wrap">
  <header class="hd">
     <div class="hd_wrap">
-        <a href="" class="logo"><img src="./img/logo/logo.png" width="130" height="50" alt="로고"></a>
+        <a href="" class="logo"><img src="./img/logo/logo.png" width="160" alt="로고"></a>
         <nav class="tnb">
             <a href="login.html">로그인</a>
             <a href="join.html">회원가입</a>
@@ -145,7 +163,7 @@
                          <img src="./img/index/ralph.PNG" alt="지금 진행중인 캠페인" class="pic">
                          <div class="hv_box">
                              <h3 class="pic_tit">지금 진행중인 캠페인</h3>
-                             <p class="pic_com">동물대체시험범 제정안 통과를 위해 서명해주세요!</p>
+                             <p class="pic_com">동물대체시험법 제정안 통과를 위해 서명해주세요!</p>
                          </div>
                      </a>
                  </li>
