@@ -31,7 +31,7 @@
    <script src="./js/respond.min.js"></script>
    <!-- jquery 플러그인 연결 -->
    <script src="./js/jquery-1.11.1.js"></script>
-   <link rel="stylesheet" href="./css/reset.css">
+   <link rel="stylesheet" href="./css/reset2.css">
    <style>
     /* header.css */
     .hd { width: 100%; position: absolute; top: 0; left: 0; z-index:999; background-color: #fff; height: 113px; }
@@ -39,7 +39,7 @@
     .hd_wrap { width:1200px; margin:0 auto; }
     .logo { display:block; width: 130px; height:auto; margin-top:40px; margin-bottom:40px; float:left;}
     .logo img { display: block; width: 100%; }
-    .tnb { float:right; margin: 30px 0px; }
+    .tnb { float:right; margin:50px 0px; margin-top: 45px; }
     .tnb a { font-size:14px; color:#333; padding: 1.5em; font-weight:300; }
     .tnb a:hover { font-weight:700; text-decoration: underline; }
     .gnb { clear:both; width:100%; }
@@ -47,13 +47,13 @@
     .gnb li { float:left; }
     .gnb li .sub { display:none; }
     .gnb > ul > li { float: left; width: 20%; height: 40px; line-height:40px; text-align: center; position: relative; }
-    .gnb li .dp1 { display:block; height:40px; line-height: 40px; background-color: transparent; color:#fff; text-align: center; }
+    .gnb li .dp1 { display:block; height:40px; line-height: 40px; background-color: transparent; color:#fff; text-align: center; font-weight:530;}
     .gnb li:hover .dp1 { background-color: #000; color: #fff; }
     .gnb .sub { display: none; width:100%; height:auto; position:absolute; top:40px; background-color:transparent; left: 0; z-index:90; height: 124px; }
     .gnb li:hover .sub { display:block; }
-    .gnb li .sub li { clear:both; width: 100%; height: 30px; line-height: 30px; border-bottom:1px solid #fff; }
+    .gnb li .sub li { clear:both; width: 100%; height: 40px; line-height: 40px; border-bottom:1px solid #fff; }
     .gnb li .sub li a { background-color:transparent; color: #fff; font-size:14px; display:block; text-indent:0.2em; }
-    .gnb li .sub li:hover a { background-color:greenyellow; color: #000; text-align: center;}
+    .gnb li .sub li:hover a { background-color:greenyellow; color: #000; text-align: center; }
     .content { clear:both; width: 100%;}
     .vs { clear:both; width: 100%; height:100vh; overflow:hidden;}
     .vdo { display:block; width:100%; height:auto; }
@@ -62,20 +62,66 @@
     .page_tit { text-align: center; font-size:32px; padding-top: 1.2em; padding-bottom: 0.8em;}
     .lst { clear:both; width: 1200px;}
     .lst:after { content:""; display:block; clear:both; }
-    .lst li.left { float:left; }
-    .lst li.right { float:right; }
+    .lst li { margin-bottom: 40px;}
+    .lst li.left { float:left; width: 816px; height: 459px;}
+    .lst li.right { float:right; width: 350px; height: 459px;}
+    .ico_lst { clear: both; width: 100%; overflow: hidden;}
+    .ico_list li a { display: block; background-repeat: no-repeat; background-position: 0px center; background-size: auto 80%; padding-left: 55px;}
+    .ico_lst li a.icon1 { background-image: url("./img/icon/1.svg");}
+    .ico_lst li a.icon2 { background-image: url("./img/icon/2.svg");}
+    .ico_lst li a.icon3 { background-image: url("./img/icon/3.svg");}
+    .cate_tit { color: #000; font-size: 20px; padding-bottom: 0.5em;}
+    .cate_com { color:#000; font-size: 14px;}
+    
+    .pic_lst { clear: both; width: 100%; padding-bottom: 80px;}
+    .pic_lst:after { content: ""; display: block; clear: both;}
+    .pic_list li { float: left; position: relative; margin-bottom: 40px;}
+    .pic_lst li a { display: block; width: 360px; margin-right: 40px; overflow: hidden; height: 300px;}
+    .pic_lst li a img {display: block; width: 600px; margin-left: -120px; transition-duration: 0.8s;}
+    .pic_lst li a:hover img { margin-left: 0;}
+    .pic_lst li a .hv_box { width: 360px; }
+    /* */
+
+    #page3 { background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position:center center; height: 100vh; background-image:url(""); overflow:hidden; }
+    #page3 .page_wrap { width: 100%; }
+    .circle_lst { clear:both; width: 4455px; }
+    .circle_lst li { width: 200px; height: 200px; position:relative; border-radius:120px; overflow:hidden; background-color: #fff;
+    float:left; margin:28px;  }
+    .circle_lst.lst2 li { float:right; }
+    .circle_lst li a { display:block; width: 100%; height: 100%; }
+    .circle_lst li a img { display:block; width:160px; height:auto; 
+    position:absolute; top:50%; left: 20px; z-index:11; margin-top: -28px; }
+
+
+    /* footer */
+    .ft { clear:both; width: 100%; height: 200px; background-color: #232; padding-bottom: 50px; }
+    .ft_wrap { clear:both; width: 1200px; margin: 0 auto; padding-top: 50px;  }
+    .ft_wrap:after { content:""; display:block; clear:both; }
+    .ft_logo { float:left; width: 150px; }
+    .mid_box { float:left; width: 760px; padding-left: 100px; }
+    .fnb { clear:both; }
+    .fnb a { color:#fff; font-size:14px; padding: 24px; }
+    .fnb a.dpc { color:deeppink; }
+    .addr { padding-left: 24px; color:#ececec; padding-top: 20px; 
+    font-size:12px; line-height: 2; }
+    .copyright { padding-left: 24px; color:#fff; padding-top: 10px; }
+    .sel_box { float:right; border-bottom:1px solid #fff;
+    height: 44px; line-height: 44px; text-align:center; width: 140px; }
+    #sel { border:none; outline: none; background-color: transparent; color:#fff; }
+    #sel option { color:#333; }
     </style>
     <script>
     $(document).ready(function(){
-        $(window).scroll(function(){
-            var ht = $(window).height();
-            var tp = $(this).scrollTop();
-            if(tp>=600){
-                $(".hd").css("position","fixed");
-            } else {
+@@ -83,6 +140,10 @@
                 $(".hd").css("position","absolute");
             }
         });
+        $
+        $("<ul class='circle_lst lst2'></ul>").insertAfter($(".circle_lst"));
+        $lst1_obj = $(".circle_lst li").clone();
+        $(".circle_lst.lst2").append($lst1_obj);
     });    
     </script>
 </head>
@@ -136,7 +182,7 @@
 </header>
 <div class="content">
     <figure class="vs">
-        <video src="./video/twenty.mp4" autoplay muted class="vdo"></video>
+        <video src="./video/20.mp4" autoplay muted class="vdo"></video>
     </figure>
     <section class="page" id="page1">
         <div class="page_wrap"> 
@@ -148,20 +194,20 @@
                  <li class="right">
                      <ul class="ico_lst">
                          <li>
-                             <a href="https://booking.naver.com/booking/5/bizes/767042" target="vdo2" img src="./img/icon/1.svg" alt="쇼케이스 티켓 예약" class="icon1"> 
+                             <a href="https://booking.naver.com/booking/5/bizes/767042" target="vdo2" alt="쇼케이스 티켓 예약" class="icon1"> 
                                  <h3 class="cate_tit">쇼케이스 티켓 예약하기</h3>
 
                                  <p class="cate_com">성수 LAYER 57(서울특별시 성동구 성수이로 20길 57)</p>
                              </a>
                          </li>
                          <li>
-                             <a href="https://www.youtube.com/embed/XuyYexBNGXg" target="vdo2" img src="./img/icon/2.svg" alt="아티스트 콜라보" class="icon2"> 
+                             <a href="https://www.youtube.com/embed/XuyYexBNGXg" target="vdo2" alt="아티스트 콜라보" class="icon2"> 
                                  <h3 class="cate_tit">아티스트 콜라보</h3>
-                                 <p class="cate_com">나나영롱킴 보리 캼 파이오나 전수경 이대철 한젬마 샘바이펜</p>
+                                 <p class="cate_com">나나영롱킴 | 보리 | 캼 | 파이오나 | 전수경 | 이대철<br>한젬마 | 샘바이펜</p>
                              </a>
                          </li>
                          <li>
-                             <a href="https://www.youtube.com/embed/XuyYexBNGXg" target="vdo2" img src="./img/icon/3.svg" alt="20주년 리미티드 향수 '욕심쟁이 퍼퓸'" class="icon3"> 
+                             <a href="https://www.youtube.com/embed/XuyYexBNGXg" target="vdo2" alt="20주년 리미티드 향수 '욕심쟁이 퍼퓸'" class="icon3"> 
                                  <h3 class="cate_tit">20주년 리미티드 향수 '욕심쟁이 퍼퓸'</h3>
                                  <p class="cate_com">쇼케이스 최초 공개!</p>
                              </a>
@@ -228,7 +274,7 @@
                 <li>
                     <a href="https://www.lush.co.kr/event/view/1019?eventStatus=">
                     <a href="">
-                        <img src="./img/index/artfare.PNG" alt="지금 놓치면 안될 사랑스러운 이벤트" class="pic">
+                        <img src="./img/index/artfare.PNG" height:auto alt="지금 놓치면 안될 사랑스러운 이벤트" class="pic">
                         <div class="hv_box">
                             <h3 class="pic_tit">지금 놓치면 안될 사랑스러운 이벤트</h3>
                             <p class="pic_com">러쉬 아트페어</p>
@@ -265,7 +311,7 @@
  </div>
  <footer class="ft">
      <div class="ft_wrap">
-         <div class="ft_logo"><img src="./img//logo/lush_transparent.png" width="130" height:auto alt="하단로고"></div>
+         <div class="ft_logo"><img src="./img//logo/lush_transparent.png" width="100" height:auto alt="하단로고"></div>
          <div class="mid_box">
              <nav class="fnb">
                  <a href="member01.html">개인정보처리방침</a> 
