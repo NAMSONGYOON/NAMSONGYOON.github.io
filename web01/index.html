@@ -34,14 +34,14 @@
    <link rel="stylesheet" href="./css/reset2.css">
    <style>
     /* header.css */
-    .hd { width: 100%; position: absolute; top: 0; left: 0; z-index:999; background-color: #fff; height: 113px; }
-    .hd:hover { background-color: #fff; }
+    .hd { width: 100%; position: absolute; top: 0; left: 0; z-index:999; background-color: transparent; height: 80px; }
+    .hd:hover { background-color: transparent; }
     .hd_wrap { width:1200px; margin:0 auto; }
-    .logo { display:block; width: 130px; height:auto; margin-top:40px; margin-bottom:40px; float:left;}
+    .logo { display:block; width: 155px; height:auto; margin-top:30px; margin-bottom:20px; float:left;}
     .logo img { display: block; width: 100%; }
-    .tnb { float:right; margin:50px 0px; margin-top: 45px; }
-    .tnb a { font-size:14px; color:#333; padding: 1.5em; font-weight:300; }
-    .tnb a:hover { font-weight:700; text-decoration: underline; }
+    .tnb { float:right; margin:40px 0px; margin-top: 40px; }
+    .tnb a { font-size:14px; color:#fff; padding: 1em; font-weight:300; }
+    .tnb a:hover { font-weight:300; border:1px solid greenyellow; margin:-1px; background-color: transparent; color:greenyellow; }
     .gnb { clear:both; width:100%; }
     .gnb:after { content:""; display: block; clear:both; }
     .gnb li { float:left; }
@@ -53,7 +53,7 @@
     .gnb li:hover .sub { display:block; }
     .gnb li .sub li { clear:both; width: 100%; height: 40px; line-height: 40px; border-bottom:1px solid #fff; }
     .gnb li .sub li a { background-color:transparent; color: #fff; font-size:14px; display:block; text-indent:0.2em; }
-    .gnb li .sub li:hover a { background-color:greenyellow; color: #000; text-align: center; }
+    .gnb li .sub li:hover a { background-color:greenyellow; color: #000; text-align: center;}
     .content { clear:both; width: 100%;}
     .vs { clear:both; width: 100%; height:100vh; overflow:hidden;}
     .vdo { display:block; width:100%; height:auto; }
@@ -66,7 +66,7 @@
     .lst li.left { float:left; width: 816px; height: 459px;}
     .lst li.right { float:right; width: 350px; height: 459px;}
     .ico_lst { clear: both; width: 100%; overflow: hidden;}
-    .ico_list li a { display: block; background-repeat: no-repeat; background-position: 0px center; background-size: auto 80%; padding-left: 55px;}
+    .ico_lst li a { display: block; background-repeat: no-repeat; background-position: 0px center; background-size: auto 80%; padding-left: 80px;}
     .ico_lst li a.icon1 { background-image: url("./img/icon/1.svg");}
     .ico_lst li a.icon2 { background-image: url("./img/icon/2.svg");}
     .ico_lst li a.icon3 { background-image: url("./img/icon/3.svg");}
@@ -75,50 +75,49 @@
     
     .pic_lst { clear: both; width: 100%; padding-bottom: 80px;}
     .pic_lst:after { content: ""; display: block; clear: both;}
-    .pic_list li { float: left; position: relative; margin-bottom: 40px;}
-    .pic_lst li a { display: block; width: 360px; margin-right: 40px; overflow: hidden; height: 300px;}
-    .pic_lst li a img {display: block; width: 600px; margin-left: -120px; transition-duration: 0.8s;}
-    .pic_lst li a:hover img { margin-left: 0;}
-    .pic_lst li a .hv_box { width: 360px; }
-    /* */
+    .pic_lst li { float: left; position: relative; margin-bottom: 40px;}
+    .pic_lst li a { display: block; width: 360px; margin-right: 40px; overflow: hidden; height:360px;}
+    .pic_lst li a img {display: block; width:360px; height:auto; }
+    .pic_lst li a:hover img { margin-left: 0; }
+    .pic_lst li a .hv_box { width: 360px; height: 300px; color:#fff; opacity:0; position:absolute; top:0; left: 0; z-index:10; transition-duration:0.8s; background-color:transparent; }
+    .pic_lst li a:hover .hv_box { opacity:1; }
+    .pic_tit { position:absolute; top:30px; left: 30px; 
+    text-shadow:0px 0px 3px #000; }
+    .pic_com { position:absolute; right:30px; bottom:30px; 
+    background-color: rgba(152, 247, 0, 0.739); color: #000; border-radius:9px;}
 
     #page3 { background-repeat: no-repeat; 
     background-size: cover; 
-    background-position:center center; height: 100vh; background-image:url(""); overflow:hidden; }
+    background-position:center; height: 100vh; overflow:hidden; }
     #page3 .page_wrap { width: 100%; }
     .circle_lst { clear:both; width: 4455px; }
     .circle_lst li { width: 200px; height: 200px; position:relative; border-radius:120px; overflow:hidden; background-color: #fff;
     float:left; margin:28px;  }
     .circle_lst.lst2 li { float:right; }
     .circle_lst li a { display:block; width: 100%; height: 100%; }
-    .circle_lst li a img { display:block; width:160px; height:auto; 
-    position:absolute; top:50%; left: 20px; z-index:11; margin-top: -28px; }
-
+    .circle_lst li a img { display:block; width:190px; height:auto; 
+    position:absolute; top:50%; left: 7px; z-index:11; margin-top: -90px; }
 
     /* footer */
-    .ft { clear:both; width: 100%; height: 200px; background-color: #232; padding-bottom: 50px; }
+    .ft { clear:both; width: 100%; height: 200px; background-color: rgb(181, 174, 203); padding-bottom: 50px; }
     .ft_wrap { clear:both; width: 1200px; margin: 0 auto; padding-top: 50px;  }
     .ft_wrap:after { content:""; display:block; clear:both; }
     .ft_logo { float:left; width: 150px; }
     .mid_box { float:left; width: 760px; padding-left: 100px; }
     .fnb { clear:both; }
-    .fnb a { color:#fff; font-size:14px; padding: 24px; }
-    .fnb a.dpc { color:deeppink; }
-    .addr { padding-left: 24px; color:#ececec; padding-top: 20px; 
+    .fnb a { color:#000; font-size:14px; padding: 24px; }
+    .fnb a.dpc { color:#fff; }
+    .addr { padding-left: 24px; color:#000; padding-top: 20px; 
     font-size:12px; line-height: 2; }
-    .copyright { padding-left: 24px; color:#fff; padding-top: 10px; }
+    .copyright { padding-left: 24px; color:#000; padding-top: 10px; }
     .sel_box { float:right; border-bottom:1px solid #fff;
-    height: 44px; line-height: 44px; text-align:center; width: 140px; }
-    #sel { border:none; outline: none; background-color: transparent; color:#fff; }
-    #sel option { color:#333; }
+    height: 40px; line-height: 44px; text-align:center; width: 140px; }
+    #sel { border:none; outline: none; background-color: transparent; color:rgb(41, 41, 41); }
+    #sel option { color:rgb(41, 41, 41); }
     </style>
     <script>
     $(document).ready(function(){
-@@ -83,6 +140,10 @@
-                $(".hd").css("position","absolute");
-            }
-        });
-        $
+        $(".hd").css("position","absolute");
         $("<ul class='circle_lst lst2'></ul>").insertAfter($(".circle_lst"));
         $lst1_obj = $(".circle_lst li").clone();
         $(".circle_lst.lst2").append($lst1_obj);
@@ -137,7 +136,7 @@
         <nav class="gnb">
             <ul>
                 <li class="item1">
-                    <a href="" class="dp1">러쉬소개</a>
+                    <a href="https://www.lush.co.kr/service/introduction" class="dp1">러쉬소개</a>
                     <ul class="sub">
                         <li><a href="brand.html#page1">러쉬역사</a></li>
                         <li><a href="brand.html#page2">이념과가치</a></li>
@@ -145,7 +144,7 @@
                     </ul>
                 </li>
                 <li class="item2">
-                    <a href="" class="dp1">제품</a>
+                    <a href="https://www.lush.co.kr/categories/index/113" class="dp1">제품</a>
                     <ul class="sub">
                         <li><a href="product.html#page1">베스트</a></li>
                         <li><a href="product.html#page2">신제품</a></li>
@@ -153,7 +152,7 @@
                     </ul>
                 </li>
                 <li class="item3">
-                    <a href="" class="dp1">오프라인</a>
+                    <a href="https://www.lush.co.kr/board/shop" class="dp1">오프라인</a>
                     <ul class="sub">
                         <li><a href="offline.html#page1">매장안내</a></li>
                         <li><a href="offline.html#page2">스파</a></li>
@@ -161,7 +160,7 @@
                     </ul>
                 </li>
                 <li class="item4">
-                    <a href="" class="dp1">커뮤니티</a>
+                    <a href="https://www.lush.co.kr/event/list" class="dp1">커뮤니티</a>
                     <ul class="sub">
                         <li><a href="community.html#page1">공지사항</a></li>
                         <li><a href="community.html#page2">이벤트</a></li>
@@ -169,7 +168,7 @@
                     </ul>
                 </li>
                 <li class="item5">
-                    <a href="" class="dp1">고객센터</a>
+                    <a href="https://www.lush.co.kr/mypage/faq" class="dp1">고객센터</a>
                     <ul class="sub">
                         <li><a href="service.html#page1">FAQ</a></li>
                         <li><a href="service.html#page2">1:1문의</a></li>
@@ -182,7 +181,7 @@
 </header>
 <div class="content">
     <figure class="vs">
-        <video src="./video/20.mp4" autoplay muted class="vdo"></video>
+        <video src="./video/20.mp4" autoplay muted loop class="vdo"></video>
     </figure>
     <section class="page" id="page1">
         <div class="page_wrap"> 
@@ -194,22 +193,21 @@
                  <li class="right">
                      <ul class="ico_lst">
                          <li>
-                             <a href="https://booking.naver.com/booking/5/bizes/767042" target="vdo2" alt="쇼케이스 티켓 예약" class="icon1"> 
+                             <a href="https://booking.naver.com/booking/5/bizes/767042" target="vdo2" class="icon1"> 
                                  <h3 class="cate_tit">쇼케이스 티켓 예약하기</h3>
-
                                  <p class="cate_com">성수 LAYER 57(서울특별시 성동구 성수이로 20길 57)</p>
                              </a>
                          </li>
                          <li>
-                             <a href="https://www.youtube.com/embed/XuyYexBNGXg" target="vdo2" alt="아티스트 콜라보" class="icon2"> 
+                             <a href="https://www.youtube.com/embed/XuyYexBNGXg" target="vdo2" class="icon2"> 
                                  <h3 class="cate_tit">아티스트 콜라보</h3>
-                                 <p class="cate_com">나나영롱킴 | 보리 | 캼 | 파이오나 | 전수경 | 이대철<br>한젬마 | 샘바이펜</p>
+                                 <p class="cate_com">나나영롱킴 | 보리 | 캼 | 파이오나 | 전수경 | 이대철 | 한젬마 | 샘바이펜</p>
                              </a>
                          </li>
                          <li>
-                             <a href="https://www.youtube.com/embed/XuyYexBNGXg" target="vdo2" alt="20주년 리미티드 향수 '욕심쟁이 퍼퓸'" class="icon3"> 
-                                 <h3 class="cate_tit">20주년 리미티드 향수 '욕심쟁이 퍼퓸'</h3>
-                                 <p class="cate_com">쇼케이스 최초 공개!</p>
+                             <a href="https://www.youtube.com/embed/XuyYexBNGXg" target="vdo2" class="icon3"> 
+                                 <h3 class="cate_tit">20주년 리미티드 향수</h3>
+                                 <p class="cate_com">'욕심쟁이 퍼퓸' 쇼케이스 최초 공개!</p>
                              </a>
                          </li>
                      </ul>
@@ -223,61 +221,55 @@
              <ul class="pic_lst">
                  <li>
                      <a href="https://www.lush.co.kr/mypage/view/1920">
-                     <a href="">
-                         <img src="./img/index/logo3.jpg" alt="공지사항" class="pic"> 
+                         <img src="./img/index/logo3.jpg"  width="600" height: auto alt="공지사항" class="pic"> 
                          <div class="hv_box">
                              <h3 class="pic_tit">공지사항</h3>
-                             <p class="pic_com">홈페이지 리뉴얼로 인한 비밀번호 초기화</p>
+                             <p class="pic_com">&nbsp;홈페이지 리뉴얼로 인한 비밀번호 초기화&nbsp;</p>
                          </div>
                      </a>
                  </li>
                  <li>
                      <a href="https://www.lush.co.kr/board/article/22284">
-                     <a href="">
-                         <img src="./img/index/ralph.PNG" alt="지금 진행중인 캠페인" class="pic">
+                         <img src="./img/index/ralph.PNG"  width="600" height: auto alt="지금 진행중인 캠페인" class="pic">
                          <div class="hv_box">
                              <h3 class="pic_tit">지금 진행중인 캠페인</h3>
-                             <p class="pic_com">동물대체시험법 제정안 통과를 위해 서명해주세요!</p>
+                             <p class="pic_com">&nbsp;동물대체시험법 제정안 통과 서명&nbsp;</p>
                          </div>
                      </a>
                  </li>
                  <li>
                      <a href="https://www.lush.co.kr/event/view/1034?eventStatus=">
-                     <a href="">
-                         <img src="./img/index/20.png" alt="지금 놓치면 안될 사랑스러운 이벤트" class="pic"> 
+                         <img src="./img/index/20.png"  width="600" height: auto alt="지금 놓치면 안될 사랑스러운 이벤트" class="pic"> 
                          <div class="hv_box">
                              <h3 class="pic_tit">지금 놓치면 안될 사랑스러운 이벤트</h3>
-                             <p class="pic_com">20 YEARS SHOWCASE</p>
+                             <p class="pic_com">&nbsp;20 YEARS SHOWCASE&nbsp;</p>
                          </div>
                      </a>
                  </li>
                  <li>
                      <a href="https://www.lush.co.kr/event/view/1031?eventStatus=">
-                     <a href="">
-                         <img src="./img/index/letter.png" alt="지금 놓치면 안될 사랑스러운 이벤트" class="pic"> 
+                         <img src="./img/index/letter.png"  width="600" height: auto alt="지금 놓치면 안될 사랑스러운 이벤트" class="pic"> 
                          <div class="hv_box">
                              <h3 class="pic_tit">지금 놓치면 안될 사랑스러운 이벤트</h3>
-                             <p class="pic_com">기대가 클수록 러쉬레터도 큰다!</p>
+                             <p class="pic_com">&nbsp;기대가 클수록 러쉬레터도 큰다!&nbsp;</p>
                          </div>
                      </a>
                  </li>        
                  <li>
                     <a href="https://www.lush.co.kr/event/view/1032?eventStatus=">
-                    <a href="">
-                        <img src="./img/index/halloween.PNG" alt="지금 놓치면 안될 사랑스러운 이벤트" class="pic">
+                        <img src="./img/index/halloween.PNG"  width="600" height: auto alt="지금 놓치면 안될 사랑스러운 이벤트" class="pic">
                         <div class="hv_box">
                             <h3 class="pic_tit">지금 놓치면 안될 사랑스러운 이벤트</h3>
-                            <p class="pic_com">2022 할로윈 에디션 론칭</p>
+                            <p class="pic_com">&nbsp;2022 할로윈 에디션 론칭&nbsp;</p>
                         </div>
                     </a>
                 </li>
                 <li>
                     <a href="https://www.lush.co.kr/event/view/1019?eventStatus=">
-                    <a href="">
-                        <img src="./img/index/artfare.PNG" height:auto alt="지금 놓치면 안될 사랑스러운 이벤트" class="pic">
+                        <img src="./img/index/artfare.PNG"  width="600" height: auto alt="지금 놓치면 안될 사랑스러운 이벤트" class="pic">
                         <div class="hv_box">
                             <h3 class="pic_tit">지금 놓치면 안될 사랑스러운 이벤트</h3>
-                            <p class="pic_com">러쉬 아트페어</p>
+                            <p class="pic_com">&nbsp;러쉬 아트페어&nbsp;</p>
                         </div>
                     </a>
                 </li>         
@@ -328,7 +320,6 @@
          <div class="sel_box">
              <select name="sel" id="sel" class="sel" onchange="sel_link(this)">
                  <option value="">LUSH SNS</option>
-                 <option value="">SNS</option>
                  <option value="https://twitter.com/LUSHKOREA">TWITTER</option>
                  <option value="https://www.instagram.com/lushkorea/">INSTAGRAM</option> 
                  <option value="https://www.youtube.com/user/LUSHKOREA1">YOUTUBE</option>
