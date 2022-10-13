@@ -36,29 +36,20 @@
    <style>
     
     /* header.css */
-    .hd { position:fixed; }
 
-    /* content */
-    .vs { clear:both; width: 100%; height:300px; overflow: hidden; }
-    .vs img { display:block; width: 100%; height:auto; }
-    .bread { clear:both; width: 100%; line-height: 60px; }
-    .bread_fr { width: 1200px; margin: 0 auto; }
-    .page { clear:both; width: 100%; min-height:100vh;}
-    .page:after { content:""; display:block; clear:both; }
-    .page_wrap { width: 1200px; margin: 0 auto; }
-    .content { display:none; }
-    .content:target { display:block; }
+    .vs { clear:both; width: 100%; height: 300px;; overflow:hidden;}
+    .vs img { display:block; } /* */
 
-    /* footer.css */
+    /* footer */
+
     </style>
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <script>
     $(document).ready(function(){
-        $(window).scroll(function(){
-            var ht = $(window).height();
-            var tp = $(this).scrollTop();
-
-        });
+        $(".hd").css("position","absolute");
+        $("<ul class='circle_lst lst2'></ul>").insertAfter($(".circle_lst"));
+        $lst1_obj = $(".circle_lst li").clone();
+        $(".circle_lst.lst2").append($lst1_obj);
     });    
     </script>
 </head>
@@ -130,31 +121,7 @@
                 <option value="offline.html#page1">오프라인</option>
                 <option value="community.html#page1">커뮤니티</option>
                 <option value="service.html#page1">고객센터</option>  
-                </select> &gt; 
-                <select name="sel2" id="sel2" class="sel">
-                <option>러쉬역사</option>
-                <option value="brand.html#page2">이념과가치</option>
-                <option value="brand.html#page3">브랜드정책</option>
-                </select>
-                 </div>
-                </div>
-                <section class="page">
-                <div class="page_wrap">
-                <h2 class="page_title">러쉬역사</h2>
-
-                </div>
-                </section>
-                </div>
-
-                <div class="content" id="page2">
-                    <figure class="vs">
-                        <img src="./img/water.jpg" alt="비주얼">
-                    </figure>
-                    <div class="bread">
-                        <div class="bread_fr">
-                            <a href="" class="home">HOME</a> &gt;
-                            <select name="sel3" id="sel3" class="sel">
-
+            <select name="sel2" id="sel2" class="sel"></select>
                 <option>제품</option>
                 <option value="brand.html#page1">러쉬소개</option>
                 <option value="offline.html#page1">오프라인</option>
