@@ -48,6 +48,21 @@
     .content { display:none; }
     .content:target { display:block; }
 
+    .noti_lst {  width:590px; float:left; }
+    .noti_lst li { clear:both; height:56px; border-bottom:1px solid #333;
+    box-sizing:border-box; }
+    .noti_lst li:first-child { border-top:2px solid #333; }
+    .noti_lst li:last-child { border-bottom:2px solid #333; }
+    .noti_lst li span { display:block; box-sizing:border-box; float:left;
+    line-height: 56px; font-size:14px; }
+    .noti_num { width: 60px; text-align:center; }
+    .not_tit { width: 340px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+    .item_hd { font-weight:600; }
+    .not_tit.item_hd { text-align: center; }
+    .not_tit a { display: block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; padding-right: 12px; color:#333; }
+    .noti_auth { width: 80px; text-align: center; }
+    .noti_date { width: 110px; text-align: center; }
+
     .page_title { padding-top: 1em; }
     .home { color:#333; }
     .to_top { position:fixed; bottom:80px; right:80px; z-index:999; 
@@ -158,6 +173,38 @@
             </div>
         </section>
     </div>
+
+    <section class="page">
+        <div class="page_wrap">
+            <h2 class="page_title">공지사항</h2><br>
+            <ul class="noti_lst">
+                <li>
+                    <span class="noti_num item_hd">번호</span>
+                    <span class="not_tit item_hd">제목</span>
+                    <span class="noti_date item_hd">날짜</span>
+                </li>
+                <li>
+                    <span class="noti_num">1</span>
+                    <span class="not_tit"><a href="">네이버페이 결제 시, 덕찌 미발급 안내</a></span>
+                    <span class="noti_date">2022-09-14</span>
+                </li>
+                <li>
+                    <span class="noti_num">2</span>
+                    <span class="not_tit"><a href="">홈페이지 리뉴얼에 따른 비밀번호 초기화 안내</a></span>
+                    <span class="noti_date">2022-09-13</span>
+                </li>
+                <li><span class="noti_num">3</span><span class="not_tit"><a href="">러쉬코리아 개인정보처리방침 변경 안내</a></span><span class="noti_date">2022-08-29</span></li>
+                <li><span class="noti_num">4</span><span class="not_tit"><a href="">러쉬코리아 고객센터 유선 응대 임시 중단 안내</a></span><span class="noti_date">2021-07-12</span></li>
+                <li><span class="noti_num">5</span><span class="not_tit"><a href="">코로나19 예방을 위한 매장 운영 안내</a></span><span class="noti_date">2021-01-29</span></li>
+                <li><span class="noti_num">6</span><span class="not_tit"><a href="">글 제목6</a></span><span class="noti_date">2022-10-18</span></li>
+                <li><span class="noti_num">7</span><span class="not_tit"><a href="">글 제목7</a></span><span class="noti_date">2022-10-18</span></li>
+                <li><span class="noti_num">8</span><span class="not_tit"><a href="">글 제목8</a></span><span class="noti_date">2022-10-18</span></li>
+                <li><span class="noti_num">9</span><span class="not_tit"><a href="">글 제목9</a></span><span class="noti_date">2022-10-18</span></li>
+                <li><span class="noti_num">10</span><span class="not_tit"><a href="">글 제목10</a></span><span class="noti_date">2022-10-18</span></li>
+            </ul>
+        </div>
+        </section>
+
     <div class="content" id="page2">
         <figure class="vs">
             <img src="./img/water.jpg" alt="비주얼">
@@ -185,6 +232,8 @@
             </div>
         </section>
     </div>
+
+
     <div class="content" id="page3">
         <figure class="vs">
             <img src="./img/water.jpg" alt="비주얼">

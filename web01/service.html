@@ -48,6 +48,19 @@
     .content { display:none; }
     .content:target { display:block; }
 
+    .faq_lst {  width:590px; float:left; }
+    .faq_lst li { clear:both; height:56px; border-bottom:1px solid #333;
+    box-sizing:border-box; }
+    .faq_lst li:first-child { border-top:2px solid #333; }
+    .faq_lst li:last-child { border-bottom:2px solid #333; }
+    .faq_lst li span { display:block; box-sizing:border-box; float:left;
+    line-height: 56px; font-size:14px; }
+    .faq_cate { width: 60px; text-align:center; }
+    .faq_tit { width: 460px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+    .item_hd { font-weight:600; }
+    .faq_tit.item_hd { text-align: center; }
+    .faq_tit a { display: block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; padding-right: 12px; color:#333; }
+
     .page_title { padding-top: 1em; }
     .home { color:#333; }
     .to_top { position:fixed; bottom:80px; right:80px; z-index:999; 
@@ -158,6 +171,35 @@
             </div>
         </section>
     </div>
+
+    <section class="page">
+        <div class="page_wrap">
+            <h2 class="page_title">FAQ</h2><br>
+            <ul class="faq_lst">
+                <li>
+                    <span class="faq_cate item_hd">카테고리</span>
+                    <span class="faq_tit item_hd">제목</span>
+                </li>
+                <li>
+                    <span class="faq_cate">스파</span>
+                    <span class="faq_tit"><a href="">러쉬 스파는 어디에 있나요?</a></span>
+                </li>
+                <li>
+                    <span class="faq_cate">스파</span>
+                    <span class="faq_tit"><a href="">스파 예약은 어떻게 하나요?</a></span>
+                </li>
+                <li><span class="faq_cate">스파</span><span class="faq_tit"><a href="">바우처 사용기한이 어떻게 되나요?</a></span></li>
+                <li><span class="faq_cate">스파</span><span class="faq_tit"><a href="">스파 바우처를 제품으로 교환할 수 있나요?</a></span></li>
+                <li><span class="faq_cate">스파</span><span class="faq_tit"><a href="">구매한 스파 바우처 환불하고 싶어요.</a></span></li>
+                <li><span class="faq_cate">스파</span><span class="faq_tit"><a href="">테라피스트 지정이 가능한가요?</a></span></li>
+                <li><span class="faq_cate">스파</span><span class="faq_tit"><a href="">커플룸 이용이 가능한가요?</a></span></li>
+                <li><span class="faq_cate">스파</span><span class="faq_tit"><a href="">홈페이지로 스파 예약 했는데, 예약된 게 맞나요?</a></span></li>
+                <li><span class="faq_cate">스파</span><span class="faq_tit"><a href="">스파 매장 이용시 발렛 서비스가 가능한가요?</a></span></li>
+                <li><span class="faq_cate">스파</span><span class="faq_tit"><a href="">스파 바우처를 선물할 수 있나요?</a></span></li>
+            </ul>
+        </div>
+        </section>
+
     <div class="content" id="page2">
         <figure class="vs">
             <img src="./img/water.jpg" alt="비주얼">
@@ -185,6 +227,9 @@
             </div>
         </section>
     </div>
+
+
+
     <div class="content" id="page3">
         <figure class="vs">
             <img src="./img/water.jpg" alt="비주얼">
